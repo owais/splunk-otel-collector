@@ -64,6 +64,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/zipkinreceiver"
 
 	"github.com/signalfx/splunk-otel-collector/internal/extension/smartagentextension"
+	"github.com/signalfx/splunk-otel-collector/internal/receiver/podmanstatsreceiver"
 	"github.com/signalfx/splunk-otel-collector/internal/receiver/smartagentreceiver"
 )
 
@@ -101,6 +102,7 @@ func Get() (component.Factories, error) {
 		signalfxreceiver.NewFactory(),
 		simpleprometheusreceiver.NewFactory(),
 		smartagentreceiver.NewFactory(),
+		podmanstatsreceiver.NewFactory(),
 		splunkhecreceiver.NewFactory(),
 		statsdreceiver.NewFactory(),
 		zipkinreceiver.NewFactory(),

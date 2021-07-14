@@ -4,12 +4,14 @@ go 1.16
 
 require (
 	github.com/cenkalti/backoff/v4 v4.1.1
+	github.com/containers/podman/v3 v3.2.2
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/go-zookeeper/zk v1.0.2
 	github.com/hashicorp/vault v1.7.0
 	github.com/hashicorp/vault-plugin-auth-gcp v0.9.0
 	github.com/hashicorp/vault/api v1.1.0
+	github.com/mtrmac/gpgme v0.1.2 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sapmexporter v0.29.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter v0.29.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter v0.29.0
@@ -43,10 +45,13 @@ require (
 	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/cast v1.3.1
 	github.com/stretchr/testify v1.7.0
-	go.etcd.io/etcd v0.5.0-alpha.5.0.20200425165423-262c93980547
+	go.etcd.io/etcd v0.5.0-alpha.5.0.20200910180754-dd1b699fc489
 	go.opentelemetry.io/collector v0.29.0
 	go.uber.org/zap v1.17.0
+	golang.org/x/net v0.0.0-20210610132358-84b48f89b13b // indirect
 	golang.org/x/sys v0.0.0-20210611083646-a4fc73990273
+	google.golang.org/grpc v1.39.0 // indirect
+	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0
 )
 
